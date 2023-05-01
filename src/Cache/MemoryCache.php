@@ -59,7 +59,7 @@ class MemoryCache implements CacheInterface
     /**
      * {@inheritdoc}
      */
-    public function get(string $key, mixed $default = null): mixed
+public function get($key, $default = null)
     {
         if ($this->has($key)) {
             return $this->cache[$key];
