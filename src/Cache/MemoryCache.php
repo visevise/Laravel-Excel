@@ -37,7 +37,8 @@ class MemoryCache implements CacheInterface
     /**
      * {@inheritdoc}
      */
-    public function delete(string $key): bool
+public function delete($key): bool
+
     {
         unset($this->cache[$key]);
 
