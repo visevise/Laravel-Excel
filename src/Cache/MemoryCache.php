@@ -72,7 +72,8 @@ public function get($key, $default = null)
     /**
      * {@inheritdoc}
      */
-    public function getMultiple(iterable $keys, mixed $default = null): iterable
+ public function getMultiple($keys, $default = null): iterable
+
     {
         $results = [];
         foreach ($keys as $key) {
